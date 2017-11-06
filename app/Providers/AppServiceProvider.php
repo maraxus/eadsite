@@ -14,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //patching to solve this issue: 
+        //patching to solve this issue on migrations: https://github.com/laravel/framework/issues/17508
         Schema::defaultStringLength(191);
     }
 
